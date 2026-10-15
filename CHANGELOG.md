@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.5 — prepared for release
+
+- Changed running pipeline menu bar dots to blue outlines with transparent centers.
+- Changed successful-completion notification wording to “Finished”.
+- Moved first-launch trust instructions next to the download links, with numbered Privacy & Security steps.
+
 ## 1.1.4 — 2026-10-15
 
 - Updated the running-job clock glyph to the supplied shorter, finer strokes.

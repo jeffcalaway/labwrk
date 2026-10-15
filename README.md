@@ -10,9 +10,37 @@ The name combines GitLab with the idea of laboratory work: a small instrument fo
 
 Current release: **[Labwrk 1.1.4](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.4)**, for Apple silicon and macOS 14 or later.
 
+> [!IMPORTANT]
+> **First launch on macOS:** the current release is locally signed and has not been Apple-notarized. If macOS displays **“Labwrk Not Opened”**, use **System Settings → Privacy & Security → Open Anyway** as described below.
+
+## Install and open Labwrk
+
+1. Download the ZIP from [the official Releases page](https://github.com/jeffcalaway/labwrk/releases/latest).
+2. Extract it and drag **Labwrk.app** into **Applications**.
+3. Open **Labwrk** from Applications. If macOS blocks it, follow the first-launch steps below.
+
+### First launch: “Labwrk Not Opened”
+
+Only continue if you downloaded Labwrk directly from this repository and trust the release.
+
+1. In the warning dialog, select **Done**.
+2. Open **System Settings → Privacy & Security** and scroll to the **Security** section.
+3. Find the message about Labwrk being blocked and select **Open Anyway**.
+4. Authenticate if requested, then confirm **Open** when macOS asks again.
+
+**Open Anyway appears after you have tried to open the app and macOS has blocked it.** If the message is absent, try opening Labwrk from Applications again, then return to Privacy & Security. See [Apple’s instructions for opening an unnotarized app](https://support.apple.com/en-us/102445).
+
+This creates an exception for Labwrk; you do not need to disable macOS security protections globally. Future Apple-notarized releases will be identified in their release notes.
+
+### Connect GitLab
+
+Labwrk appears in the **menu bar**, with no Dock icon. Click its indicator, open **Settings → Account**, and select **Sign in with GitLab**. Complete authorization in your default browser. Allow notifications if desired, then choose projects under **Settings → Projects**.
+
+Check for updates from the indicator’s right-click menu or **Settings → About**. Automatic updating can be enabled in Preferences. Older versions without a built-in updater need one manual installation of a newer version.
+
 ## Features
 
-- Three compact status dots and a running-pipeline count in the menu bar; dots show the three newest pipelines within a configurable time window (60 minutes by default), with empty outlines for unused slots. The count is hidden when no pipelines are running.
+- Three compact status dots and a running-pipeline count in the menu bar; dots show the three newest pipelines within a configurable time window (60 minutes by default), with empty outlines for unused slots. Running pipelines use blue outlines. The count is hidden when no pipelines are running.
 - A GitLab-style panel with pipeline status, repository links, stages, individual jobs, and downstream pipelines shown after an arrow.
 - Refined hover and cursor feedback for panel links, status circles, and controls.
 - GitLab.com browser sign-in; self-managed GitLab and personal access tokens are also supported.
@@ -24,20 +52,6 @@ Current release: **[Labwrk 1.1.4](https://github.com/jeffcalaway/labwrk/releases
 ![Labwrk pipeline panel](images/pipeline-panel.png)
 
 ![Labwrk preferences](images/preferences.png)
-
-## Installation
-
-Current builds require **macOS 14 or newer and an Apple silicon Mac**.
-
-1. Download the Labwrk ZIP from the [Releases page](https://github.com/jeffcalaway/labwrk/releases/latest).
-2. Extract it and drag **Labwrk.app** to **Applications**.
-3. Open Labwrk. It appears in the menu bar and has no Dock icon.
-4. Click the indicator, open Settings → Account, and select **Sign in with GitLab**. Complete authorization in your default browser.
-5. Allow notifications if desired, then choose projects in Settings → Projects.
-
-The current build is locally signed and has not been Apple Developer ID signed or notarized. If macOS blocks opening it, review the warning and use the per-app Open Anyway option in Privacy & Security only if you trust this official download. Future signed/notarized releases will be identified in their release notes.
-
-Check for updates from the indicator’s right-click menu or Settings → About. Automatic updating can be enabled in Preferences. Versions without a built-in updater require one manual installation of the newer app.
 
 ## Progress and privacy
 
