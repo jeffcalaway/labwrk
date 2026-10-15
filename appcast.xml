@@ -6,6 +6,26 @@
         <description>Official signed Labwrk update archives.</description>
         <language>en</language>
         <item>
+            <title>1.1.2</title>
+            <pubDate>Thu, 15 Oct 2026 13:57:54 -0500</pubDate>
+            <link>https://github.com/jeffcalaway/labwrk</link>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.2 adds downstream pipeline visibility and refines the menu bar indicator.
+
+- The indicator tooltip uses the same time-window label as Preferences, for example “within the last 2 hours”, without “newest first”.
+- Filled and outlined indicator circles use the same 5-point outer silhouette.
+- Trigger jobs now expose downstream pipelines after the supplied arrow icon. Click a downstream circle to inspect its jobs or open its pipeline in GitLab.
+- Nested and cross-project downstream jobs contribute to overall job-completion progress. Trigger proxies are replaced by their downstream jobs, and shared pipelines are counted once. The parent’s status remains the status reported by GitLab.
+- Unavailable or truncated downstream details are identified explicitly rather than displaying misleading complete progress. Traversal is bounded to 100 downstream pipelines and 10 levels per displayed root.
+
+Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
+]]></description>
+            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.2/Labwrk-1.1.2-macOS-arm64.zip" length="4299734" type="application/octet-stream" sparkle:edSignature="wFyFEf4cC9BkZM8QASrdzCR4S+UvpxwtlFpBdQZVCjmR7+nA7Si9otMp5+7mTb9kD1YWxe4Szi46Xh/Dq4nvCA=="/>
+        </item>
+        <item>
             <title>1.1.1</title>
             <pubDate>Thu, 15 Oct 2026 13:10:54 -0500</pubDate>
             <link>https://github.com/jeffcalaway/labwrk</link>
@@ -13,7 +33,7 @@
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.1 corrects running icons and adds a configurable recent-pipeline window for the menu bar indicator.
+            <description sparkle:format="markdown">Labwrk 1.1.1 corrects running icons and adds a configurable recent-pipeline window for the menu bar indicator.
 
 - Running stage and job circles use the blue #1F75CB fill and clock glyph with the pale #CCE3FA stroke. The pipeline Status column continues to show overall job-completion progress.
 - Neutral circles have transparent interiors. Created jobs use the neutral ring with a small gray center dot instead of next-job arrows.
@@ -22,7 +42,7 @@
 - The running-pipeline total continues to cover all watched projects independently of the indicator window. No number is shown when the count is zero.
 
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-]]></description>
+</description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.1/Labwrk-1.1.1-macOS-arm64.zip" length="4253553" type="application/octet-stream" sparkle:edSignature="LutCKHUMKZK2FIb0EDKiFYHlT7czuw+gGYDxV3qqKqbcD0StuQyFfZlVHiHe5VHEjpigaKPeqU2HGbK3NB0CAQ=="/>
         </item>
         <item>
