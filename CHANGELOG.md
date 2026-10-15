@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.6 — prepared for release
+
+- Showed the running clock in pipeline Status badges until the first job finishes, then switched to measured progress.
+
 ## 1.1.5 — 2026-10-15
 
 - Changed running pipeline menu bar dots to blue outlines with transparent centers.

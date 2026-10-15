@@ -55,7 +55,7 @@ Check for updates from the indicator’s right-click menu or **Settings → Abou
 
 ## Progress and privacy
 
-Pipeline status progress measures finished jobs, not elapsed time; running stages and jobs use a general clock icon. GitLab does not expose a percentage inside an individual job, so running jobs show a general clock icon and elapsed time when available. Downstream jobs contribute to job-completion progress; the parent’s overall status remains the status reported by GitLab. If downstream details are unavailable, progress is marked unavailable. The running count covers top-level pipelines in the watched projects. Status changes are observed by polling, every 30 seconds by default.
+While no jobs have finished, a running pipeline’s Status badge shows the blue clock. After the first job finishes, it shows a measured progress wedge. Pipeline status progress measures finished jobs, not elapsed time; running stages and jobs use a general clock icon. GitLab does not expose a percentage inside an individual job, so running jobs show a general clock icon and elapsed time when available. Downstream jobs contribute to job-completion progress; the parent’s overall status remains the status reported by GitLab. If downstream details are unavailable, progress is marked unavailable. The running count covers top-level pipelines in the watched projects. Status changes are observed by polling, every 30 seconds by default.
 
 GitLab credentials are stored in macOS Keychain. The app reads GitLab project/pipeline data; it does not run or modify pipelines. Software update checks contact the public update feed and GitHub release downloads, and do not send GitLab credentials.
 
