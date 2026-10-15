@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.4 — prepared for release
+
+- Updated the running-job clock glyph to the supplied shorter, finer strokes.
+- Changed the default indicator window to one hour. Existing saved selections are preserved.
+
 ## 1.1.3 — 2026-10-15
 
 - Installed the final approved three-circle application icon throughout the app and public presentation.

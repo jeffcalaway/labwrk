@@ -12,7 +12,7 @@ Current release: **[Labwrk 1.1.3](https://github.com/jeffcalaway/labwrk/releases
 
 ## Features
 
-- Three compact status dots and a running-pipeline count in the menu bar; dots show the three newest pipelines within a configurable time window (120 minutes by default), with empty outlines for unused slots. The count is hidden when no pipelines are running.
+- Three compact status dots and a running-pipeline count in the menu bar; dots show the three newest pipelines within a configurable time window (60 minutes by default), with empty outlines for unused slots. The count is hidden when no pipelines are running.
 - A GitLab-style panel with pipeline status, repository links, stages, individual jobs, and downstream pipelines shown after an arrow.
 - Refined hover and cursor feedback for panel links, status circles, and controls.
 - GitLab.com browser sign-in; self-managed GitLab and personal access tokens are also supported.
