@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a feature or improvement.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain the need or limitation you encounter.
+    validations:
+      required: true
+  - type: textarea
+    id: feature
+    attributes:
+      label: Proposed feature
+      description: Describe how it should work and why it would help.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or additional context
+      description: Optional. Do not include credentials or confidential project data.

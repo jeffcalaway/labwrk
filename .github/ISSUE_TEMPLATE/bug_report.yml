@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a reproducible problem with Labwrk.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include GitLab access tokens, OAuth codes, passwords, private project data, or other secrets. Redact screenshots and logs before attaching them."
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open Labwrk\n2. …"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Labwrk version
+      description: See Settings → About.
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or logs
+      description: Optional. Remove credentials and private information before sharing.
