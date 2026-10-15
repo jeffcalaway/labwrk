@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.3 — prepared for release
+
+- Installed the final approved three-circle application icon throughout the app and public presentation.
+- Updated the downstream arrow and simplified the menu bar tooltip.
+- Added pointing-hand cursors and hover feedback to panel links and action controls.
+- Enlarged waiting/created center dots slightly.
+- Preserved the dynamic menu bar status indicator.
+
 ## 1.1.2 — 2026-10-15
 
 - Matched indicator tooltip durations to the Preferences labels.
