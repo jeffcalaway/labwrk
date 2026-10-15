@@ -13,7 +13,7 @@ Current release: **[Labwrk 1.1.1](https://github.com/jeffcalaway/labwrk/releases
 ## Features
 
 - Three compact status dots and a running-pipeline count in the menu bar; dots show the three newest pipelines within a configurable time window (120 minutes by default), with empty outlines for unused slots. The count is hidden when no pipelines are running.
-- A GitLab-style panel with pipeline status, repository links, stages, and individual jobs.
+- A GitLab-style panel with pipeline status, repository links, stages, individual jobs, and downstream pipelines shown after an arrow.
 - GitLab.com browser sign-in; self-managed GitLab and personal access tokens are also supported.
 - Monitor all member projects or choose specific projects.
 - Separate notification controls for started, passed, warning, failed, canceled, and skipped pipelines.
@@ -40,7 +40,7 @@ Check for updates from the indicator’s right-click menu or Settings → About.
 
 ## Progress and privacy
 
-Pipeline status progress measures finished jobs, not elapsed time; running stages and jobs use a general clock icon. GitLab does not expose a percentage inside an individual job, so running jobs show a general clock icon and elapsed time when available. Status changes are observed by polling, every 30 seconds by default.
+Pipeline status progress measures finished jobs, not elapsed time; running stages and jobs use a general clock icon. GitLab does not expose a percentage inside an individual job, so running jobs show a general clock icon and elapsed time when available. Downstream jobs contribute to job-completion progress; the parent’s overall status remains the status reported by GitLab. If downstream details are unavailable, progress is marked unavailable. The running count covers top-level pipelines in the watched projects. Status changes are observed by polling, every 30 seconds by default.
 
 GitLab credentials are stored in macOS Keychain. The app reads GitLab project/pipeline data; it does not run or modify pipelines. Software update checks contact the public update feed and GitHub release downloads, and do not send GitLab credentials.
 

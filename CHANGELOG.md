@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.2 — prepared for release
+
+- Matched indicator tooltip durations to the Preferences labels.
+- Gave filled and outlined menu bar dots the same outer size.
+- Added downstream pipeline circles after an arrow, with job inspection and pipeline links.
+- Included nested and cross-project downstream jobs in progress without double-counting shared pipelines.
+- Reported unavailable downstream details without claiming full progress.
+
 ## 1.1.1 — 2026-10-15
 
 - Corrected running stage/job circles to use the filled blue clock appearance.
