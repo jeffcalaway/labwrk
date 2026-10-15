@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.3 — prepared for release
+## 1.1.3 — 2026-10-15
 
 - Installed the final approved three-circle application icon throughout the app and public presentation.
 - Updated the downstream arrow and simplified the menu bar tooltip.
