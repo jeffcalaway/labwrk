@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.2 — prepared for release
+## 1.1.2 — 2026-10-15
 
 - Matched indicator tooltip durations to the Preferences labels.
 - Gave filled and outlined menu bar dots the same outer size.
