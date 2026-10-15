@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.1 — prepared for release
+## 1.1.1 — 2026-10-15
 
 - Corrected running stage/job circles to use the filled blue clock appearance.
 - Removed white fills from neutral job circles and replaced created-job arrows with a gray center dot.
