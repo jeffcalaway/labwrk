@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.4 — prepared for release
+## 1.1.4 — 2026-10-15
 
 - Updated the running-job clock glyph to the supplied shorter, finer strokes.
 - Changed the default indicator window to one hour. Existing saved selections are preserved.
