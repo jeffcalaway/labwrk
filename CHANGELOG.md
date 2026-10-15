@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.1 — prepared for release
+
+- Corrected running stage/job circles to use the filled blue clock appearance.
+- Removed white fills from neutral job circles and replaced created-job arrows with a gray center dot.
+- Added a configurable menu bar indicator window, defaulting to 120 minutes.
+- Ordered indicator slots by pipeline creation time and left unused slots as white outlines.
+- Kept recent completion colors until expiry and the running total independent of the window.
+
 ## 1.1.0 — 2026-10-15
 
 - Added four settings tabs, launch-at-login support, and signed software update support.
