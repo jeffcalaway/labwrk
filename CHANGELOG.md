@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.5 — prepared for release
+## 1.1.5 — 2026-10-15
 
 - Changed running pipeline menu bar dots to blue outlines with transparent centers.
 - Changed successful-completion notification wording to “Finished”.
