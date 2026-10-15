@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.6 — prepared for release
+## 1.1.6 — 2026-10-15
 
 - Showed the running clock in pipeline Status badges until the first job finishes, then switched to measured progress.
 
