@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.0 — prepared for release
+## 1.1.0 — 2026-10-15
 
 - Added four settings tabs, launch-at-login support, and signed software update support.
 - Added separate pipeline-started and completion notification preferences.

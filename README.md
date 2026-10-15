@@ -8,7 +8,7 @@ The name combines GitLab with the idea of laboratory work: a small instrument fo
 
 **[Download the latest release](https://github.com/jeffcalaway/labwrk/releases/latest)** · **[Report an issue](https://github.com/jeffcalaway/labwrk/issues)**
 
-Release status: the initial public release is being prepared. Do not assume a downloadable build is available until it appears on the Releases page.
+Current release: **[Labwrk 1.1.0](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.0)**, for Apple silicon and macOS 14 or later.
 
 ## Features
 
@@ -21,6 +21,8 @@ Release status: the initial public release is being prepared. Do not assume a do
 - Open at login, manual update checks, and optional automatic updates with signed update verification.
 
 ![Labwrk pipeline panel](images/pipeline-panel.png)
+
+![Labwrk preferences](images/preferences.png)
 
 ## Installation
 
