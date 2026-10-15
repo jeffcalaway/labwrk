@@ -6,6 +6,23 @@
         <description>Official signed Labwrk update archives.</description>
         <language>en</language>
         <item>
+            <title>1.1.4</title>
+            <pubDate>Thu, 15 Oct 2026 14:48:43 -0500</pubDate>
+            <link>https://github.com/jeffcalaway/labwrk</link>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.1.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.4 updates the running-job icon and default indicator window.
+
+- Running stages/jobs use the supplied labwrk-progress-icon-2.svg geometry: shorter clock hands with 1.6-point white strokes, keeping the clock elbow at the circle center.
+- The default indicator window is now 1 hour. New settings and older settings without a saved window use 60 minutes; explicit saved selections are preserved. Change an existing selection under Preferences → Indicator time window.
+
+Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
+]]></description>
+            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.4/Labwrk-1.1.4-macOS-arm64.zip" length="5192981" type="application/octet-stream" sparkle:edSignature="KKD14Guaf8a+5H3cG+OpcqgWa7oTFeNMJw/kkzS+ZOb9wcs3kGrdjSO9D4ufreKlhYR5xOFUNKpC+TTbTMY2Ag=="/>
+        </item>
+        <item>
             <title>1.1.3</title>
             <pubDate>Thu, 15 Oct 2026 14:29:19 -0500</pubDate>
             <link>https://github.com/jeffcalaway/labwrk</link>
@@ -13,7 +30,7 @@
             <sparkle:shortVersionString>1.1.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.3 installs the final approved application icon and improves panel interactions.
+            <description sparkle:format="markdown">Labwrk 1.1.3 installs the final approved application icon and improves panel interactions.
 
 - Replaced previous branding with the approved multicolor icon featuring three large horizontal circles, throughout the application bundle, Settings, About, panel, and public presentation.
 - Compiled the supplied AppIcon asset catalog and retained the supplied ICNS for packaging. Removed duplicate embedded branding imagery and the obsolete icon generator.
@@ -24,7 +41,7 @@
 - Preserved the dynamic menu bar indicator's colors, size, rendering, and pipeline logic.
 
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-]]></description>
+</description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.3/Labwrk-1.1.3-macOS-arm64.zip" length="5191218" type="application/octet-stream" sparkle:edSignature="1Z9jdbDBL1/dm8YvVvv36Q+lK7q6AiFoVhJkteX8E74SvEN4dOTve5WO1LwMEQjdz38boySCOan+58nkSF0ABg=="/>
         </item>
         <item>
@@ -46,26 +63,6 @@ Requires macOS 14 or later on Apple silicon. This release is locally signed and 
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
 </description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.2/Labwrk-1.1.2-macOS-arm64.zip" length="4299734" type="application/octet-stream" sparkle:edSignature="wFyFEf4cC9BkZM8QASrdzCR4S+UvpxwtlFpBdQZVCjmR7+nA7Si9otMp5+7mTb9kD1YWxe4Szi46Xh/Dq4nvCA=="/>
-        </item>
-        <item>
-            <title>1.1.1</title>
-            <pubDate>Thu, 15 Oct 2026 13:10:54 -0500</pubDate>
-            <link>https://github.com/jeffcalaway/labwrk</link>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">Labwrk 1.1.1 corrects running icons and adds a configurable recent-pipeline window for the menu bar indicator.
-
-- Running stage and job circles use the blue #1F75CB fill and clock glyph with the pale #CCE3FA stroke. The pipeline Status column continues to show overall job-completion progress.
-- Neutral circles have transparent interiors. Created jobs use the neutral ring with a small gray center dot instead of next-job arrows.
-- Indicator dots represent the three newest pipelines created within the selected time window, newest first. The default window is 120 minutes, configurable under Preferences from 15 minutes to 24 hours.
-- Missing, canceled, and pending slots use empty white outlines. Recent completed pipelines keep their status color until they age out, even when none are running.
-- The running-pipeline total continues to cover all watched projects independently of the indicator window. No number is shown when the count is zero.
-
-Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-</description>
-            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.1/Labwrk-1.1.1-macOS-arm64.zip" length="4253553" type="application/octet-stream" sparkle:edSignature="LutCKHUMKZK2FIb0EDKiFYHlT7czuw+gGYDxV3qqKqbcD0StuQyFfZlVHiHe5VHEjpigaKPeqU2HGbK3NB0CAQ=="/>
         </item>
     </channel>
 </rss>
