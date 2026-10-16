@@ -8,7 +8,7 @@ The name combines GitLab with the idea of laboratory work: a small instrument fo
 
 **[Download the latest release](https://github.com/jeffcalaway/labwrk/releases/latest)** · **[Report an issue](https://github.com/jeffcalaway/labwrk/issues)**
 
-Current release: **[Labwrk 1.1.11](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.11)**, for Apple silicon and macOS 14 or later.
+Current release: **[Labwrk 1.1.13](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.13)**, for Apple silicon and macOS 14 or later.
 
 > [!IMPORTANT]
 > **First launch on macOS:** the current release is locally signed and has not been Apple-notarized. If macOS displays **“Labwrk Not Opened”**, use **System Settings → Privacy & Security → Open Anyway** as described below.
@@ -112,6 +112,8 @@ The default refresh interval is **30 seconds**. The indicator shows the **three 
 
 Click the menu bar indicator to open the pipeline panel. Confirm that the projects and running count match your chosen scope. If a scope looks empty, check the connected account, switch to the appropriate include/exclude mode, review the checked items, and click **Apply**. Use **Refresh** in Projects if your inventory is out of date.
 
+Right-click a pipeline row to choose **Rerun Pipeline** (retry failed or canceled jobs) or **Rerun Last Job** (retry the most recently started job, including a successful job). Unavailable actions are disabled. If you previously connected with `read_api`, enable `api` scope for your GitLab OAuth application and reconnect, or connect with an `api` personal access token.
+
 Choose **Check for Updates…** from the indicator’s right-click menu or **Settings → About**. You can also enable **Automatically update** in Preferences. Versions without a built-in updater need one manual installation of a newer version.
 
 ## Features
@@ -132,7 +134,7 @@ Choose **Check for Updates…** from the indicator’s right-click menu or **Set
 
 While no jobs have finished, a running pipeline’s Status badge shows the blue clock. After the first job finishes, it shows a measured progress wedge. Pipeline status progress measures finished jobs, not elapsed time; running stages and jobs use a general clock icon. GitLab does not expose a percentage inside an individual job, so running jobs show a general clock icon and elapsed time when available. Downstream jobs contribute to job-completion progress; the parent’s overall status remains the status reported by GitLab. If downstream details are unavailable, progress is marked unavailable. The running count covers top-level pipelines in the watched projects. Status changes are observed by polling, every 30 seconds by default.
 
-GitLab credentials are stored in macOS Keychain. The app reads GitLab project/pipeline data; it does not run or modify pipelines. Software update checks contact the public update feed and GitHub release downloads, and do not send GitLab credentials.
+GitLab credentials are stored in macOS Keychain. The app reads GitLab project/pipeline data and retries jobs only when you choose a rerun action. Reruns require `api` scope and project permission to run jobs; existing `read_api` connections can continue monitoring. Software update checks contact the public update feed and GitHub release downloads, and do not send GitLab credentials.
 
 ## Support and license
 

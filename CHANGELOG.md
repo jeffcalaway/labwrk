@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.13 — 2026-10-16
+
+- Added pipeline row context-menu actions to retry failed/canceled pipeline jobs or the most recently started job.
+- Requested `api` scope for new sign-ins; existing read-only connections need reconnection with `api` permission to rerun jobs.
+- Refined the menu bar passed checkmark using the updated SVG.
+
 ## 1.1.12 — 2026-10-16
 
 - Added a white checkmark for passed pipelines in the menu bar.
