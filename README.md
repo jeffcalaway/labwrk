@@ -10,7 +10,7 @@ The name combines GitLab with the idea of laboratory work: a small instrument fo
 
 **[Download Labwrk](https://github.com/jeffcalaway/labwrk/releases/latest/download/Labwrk.dmg)** · **[Release notes](https://github.com/jeffcalaway/labwrk/releases/latest)** · **[Report an issue](https://github.com/jeffcalaway/labwrk/issues)**
 
-Current release: **[Labwrk 1.1.17](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.17)**, for Apple silicon and macOS 14 or later.
+Current release: **[Labwrk 1.1.18](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.18)**, for Apple silicon and macOS 14 or later.
 
 > [!IMPORTANT]
 > **First launch on macOS:** Labwrk is signed with its own certificate but has not been Apple-notarized. If macOS displays **“Labwrk Not Opened”**, follow [the first-launch steps](#first-launch-labwrk-not-opened).
@@ -254,9 +254,13 @@ GitLab replaces your sign-in each time Labwrk renews it. Labwrk 1.1.17 and later
 
 ### Diagnostic logs
 
-Open **Settings → Preferences → Diagnostics → Show Logs in Finder** to inspect automatically recorded API failures. Logs identify the endpoint, HTTP status, and project name/ID when available. Tokens, headers, and response bodies are excluded.
+Open **Settings → Preferences → Diagnostics → Show Logs in Finder**, or select **View Log** in a panel warning, to inspect automatically recorded API failures. Logs identify the endpoint, HTTP status, and project name/ID when available. Tokens, headers, and response bodies are excluded.
 
 Two rotating log files are kept in `~/Library/Logs/Labwrk`. Review project names and server hostnames before sharing them.
+
+### “Stages unavailable” or “The request timed out”
+
+GitLab.com occasionally leaves a single request unanswered. Labwrk 1.1.18 and later repeat it once right away, so these warnings should be rare and clear on the next refresh. Select **Refresh** in the warning to try again now, or **View Log** to see which requests timed out.
 
 ### Projects returning HTTP 403
 

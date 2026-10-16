@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.18 — 2026-10-16
+
+- Repeated a GitLab request once when it went unanswered, so “Stages unavailable” warnings and refresh errors appear far less often. Reruns are never sent twice.
+- Kept the loaded stages of finished pipelines that haven’t changed, reloading everything every five minutes, so each refresh sends about half as many requests.
+- Waited up to 90 seconds for a slow reply when renewing a GitLab sign-in.
+- Added **Refresh** and **View Log** to panel warnings. View Log shows the diagnostic log in Finder.
+- Let a manual refresh run right after a failed refresh instead of waiting for the automatic retry.
+
 ## 1.1.17 — 2026-10-16
 
 - Picked up a newer GitLab sign-in saved in Keychain when another copy of Labwrk or an interrupted connection had already renewed it, instead of reporting that authorization expired or was revoked.
