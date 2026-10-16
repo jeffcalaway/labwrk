@@ -6,6 +6,28 @@
         <description>Official signed Labwrk update archives.</description>
         <language>en</language>
         <item>
+            <title>1.1.17</title>
+            <pubDate>Fri, 16 Oct 2026 16:43:37 -0500</pubDate>
+            <link>https://github.com/jeffcalaway/labwrk</link>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>1.1.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.17 keeps you signed in to GitLab when your sign-in is renewed from somewhere else.
+
+- **Fewer unexpected sign-outs:** if another copy of Labwrk, or an interrupted connection, renews your GitLab sign-in first, Labwrk now picks up the newer sign-in saved in Keychain. Previously it could stop with “Your GitLab authorization has expired or was revoked” until you signed in again.
+- **Steadier through network hiccups:** a temporary proxy or network error while renewing your sign-in is retried on the next refresh instead of signing you out.
+- **One copy at a time:** opening a second copy of Labwrk, for example from another folder, now leaves the one already running in charge.
+- **Clearer diagnostics:** sign-in renewal failures are recorded in the diagnostic logs with their status code, without tokens or response details.
+- Leaves GitLab monitoring, project scope, notifications, and saved settings unchanged.
+
+If Labwrk already asked you to sign in again, do so once from Settings → Account.
+
+Requires macOS 14 or later on Apple silicon. This release is signed with Labwrk's own certificate and has not been Apple Developer ID signed or notarized, so macOS asks you to approve the first launch of a newly downloaded copy (System Settings → Privacy & Security → Open Anyway). Update archives are independently Ed25519-signed and verified by Sparkle.
+]]></description>
+            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.17/Labwrk-1.1.17-macOS-arm64.zip" length="5763791" type="application/octet-stream" sparkle:edSignature="gdR2NhkLVY5S6DamRyAV/0AJ4tcw/29OBnU57Rd7CvThHCr+uTO1TjBLE/60vB6b6bNJwxr+WMV67IcMdhkqDQ=="/>
+        </item>
+        <item>
             <title>1.1.16</title>
             <pubDate>Fri, 16 Oct 2026 16:32:47 -0500</pubDate>
             <link>https://github.com/jeffcalaway/labwrk</link>
@@ -13,15 +35,15 @@
             <sparkle:shortVersionString>1.1.16</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.16 adds a drag-to-install installer and stops macOS from asking for your password every time Labwrk updates.
+            <description sparkle:format="markdown">Labwrk 1.1.16 adds a drag-to-install installer and stops macOS from asking for your password every time Labwrk updates.
 
 - **New installer:** download **Labwrk.dmg**, open it, and drag Labwrk into Applications. The ZIP remains available and is still used for automatic updates.
 - **Fewer Keychain prompts:** Labwrk is now signed with its own consistent certificate, so macOS remembers that Labwrk may read your GitLab sign-in. Earlier builds looked like a new app after every update, which made macOS ask for your login password again.
 - **One last prompt:** the first time 1.1.16 opens, macOS asks once more for your login password so Labwrk can move your sign-in into its new Keychain entry. Choose **Allow** or **Always Allow**; either works, and Labwrk won't ask again. If you choose **Deny**, sign in again from Settings → Account.
 - Leaves GitLab monitoring, project scope, notifications, and saved settings unchanged.
 
-Requires macOS 14 or later on Apple silicon. This release is signed with Labwrk's own certificate and has not been Apple Developer ID signed or notarized, so macOS asks you to approve the first launch of a newly downloaded copy (System Settings → Privacy & Security → Open Anyway). Update archives are independently Ed25519-signed and verified by Sparkle.
-]]></description>
+Requires macOS 14 or later on Apple silicon. This release is signed with Labwrk's own certificate and has not been Apple Developer ID signed or notarized, so macOS asks you to approve the first launch of a newly downloaded copy (System Settings → Privacy &amp; Security → Open Anyway). Update archives are independently Ed25519-signed and verified by Sparkle.
+</description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.16/Labwrk-1.1.16-macOS-arm64.zip" length="5759322" type="application/octet-stream" sparkle:edSignature="7Qtn6hiRieWrHBT4s0farJbiTm7kEY2h6hjs4Pbqe0Vz/9SNPPq8PanjGRtjIeVSetCMrHwWdcJ29oLM/FkXBA=="/>
         </item>
         <item>
@@ -41,27 +63,6 @@ Requires macOS 14 or later on Apple silicon. This release is signed with Labwrk'
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
 </description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.15/Labwrk-1.1.15-macOS-arm64.zip" length="5744726" type="application/octet-stream" sparkle:edSignature="24QhZlGAfBEbgU0qGgn+mDQP9kMsg2JJwHyQDMI7xn48tjW0OuD1XXG9wa/Ijl/yQC9FzY9X4INOdVVMEC4HBw=="/>
-        </item>
-        <item>
-            <title>1.1.14</title>
-            <pubDate>Fri, 16 Oct 2026 13:57:38 -0500</pubDate>
-            <link>https://github.com/jeffcalaway/labwrk</link>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:shortVersionString>1.1.14</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">Labwrk 1.1.14 introduces the official faceted-flask application icon.
-
-- Replaces the clipboard icon with the official flask icon in Finder, Applications, the Dock, the App Switcher, and notifications.
-- Shows the flask artwork at full size in the pipeline panel, Settings, and About headers, using its own transparent rounded corners without added backgrounds or padding.
-- Refreshes the README icon and screenshots.
-- Leaves the dynamic menu bar status indicator, GitLab monitoring, project scope, and saved settings unchanged.
-
-If Finder or the Dock still shows the previous icon after updating, relaunch Labwrk; macOS may briefly cache the old artwork.
-
-Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-</description>
-            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.14/Labwrk-1.1.14-macOS-arm64.zip" length="5743454" type="application/octet-stream" sparkle:edSignature="3H+WkGlvV4y+SuKX0xIv6TBYiUgTq9V2hhEaNxnw+fcLdrJA07uJX2Au1t6/vU1BF9P138rGRRG4nMijE+Y/BA=="/>
         </item>
     </channel>
 </rss>
