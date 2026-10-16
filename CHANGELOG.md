@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.16 — 2026-10-16
+
+- Added a drag-to-install disk image, **Labwrk.dmg**, with a branded installer window. The ZIP remains available and still delivers automatic updates.
+- Signed Labwrk with its own consistent certificate so macOS stops asking for your login password to read your GitLab sign-in after each update. The first launch of 1.1.16 asks one final time while it moves your sign-in to a new Keychain entry.
+- Preserved GitLab monitoring, project scope, notifications, and saved settings.
+
 ## 1.1.15 — 2026-10-16
 
 - Drew the panel, Settings, and About header icon with smooth rounded corners instead of jagged, clipped-looking edges at small sizes.

@@ -8,12 +8,12 @@ A native macOS menu bar app for monitoring GitLab CI/CD pipelines. Follow builds
 
 The name combines GitLab with the idea of laboratory work: a small instrument for observing your pipeline activity.
 
-**[Download the latest release](https://github.com/jeffcalaway/labwrk/releases/latest)** · **[Report an issue](https://github.com/jeffcalaway/labwrk/issues)**
+**[Download Labwrk](https://github.com/jeffcalaway/labwrk/releases/latest/download/Labwrk.dmg)** · **[Release notes](https://github.com/jeffcalaway/labwrk/releases/latest)** · **[Report an issue](https://github.com/jeffcalaway/labwrk/issues)**
 
-Current release: **[Labwrk 1.1.15](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.15)**, for Apple silicon and macOS 14 or later.
+Current release: **[Labwrk 1.1.16](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.16)**, for Apple silicon and macOS 14 or later.
 
 > [!IMPORTANT]
-> **First launch on macOS:** the current release is locally signed and has not been Apple-notarized. If macOS displays **“Labwrk Not Opened”**, follow [the first-launch steps](#first-launch-labwrk-not-opened).
+> **First launch on macOS:** Labwrk is signed with its own certificate but has not been Apple-notarized. If macOS displays **“Labwrk Not Opened”**, follow [the first-launch steps](#first-launch-labwrk-not-opened).
 
 ## Contents
 
@@ -29,11 +29,13 @@ Current release: **[Labwrk 1.1.15](https://github.com/jeffcalaway/labwrk/release
 
 ## Install
 
-1. Download the ZIP from [the official Releases page](https://github.com/jeffcalaway/labwrk/releases/latest).
-2. Extract it and drag **Labwrk.app** into **Applications**.
-3. Open **Labwrk** from Applications.
+1. Download **[Labwrk.dmg](https://github.com/jeffcalaway/labwrk/releases/latest/download/Labwrk.dmg)** from the latest release.
+2. Open it. In the window that appears, drag **Labwrk** onto **Applications**.
+3. Eject the **Labwrk** disk image in Finder's sidebar, then open **Labwrk** from Applications.
 
-Labwrk lives in the **menu bar** and has no Dock icon.
+![The Labwrk installer window: drag the Labwrk icon onto the Applications folder](images/installer.png)
+
+Labwrk lives in the **menu bar** and has no Dock icon. Already using Labwrk? Choose **Check for Updates…** instead; you don't need the installer. A ZIP of each release is also attached to [the Releases page](https://github.com/jeffcalaway/labwrk/releases/latest).
 
 ### First launch: “Labwrk Not Opened”
 
@@ -241,6 +243,10 @@ Versions without a built-in updater need one manual installation of a newer vers
 - Update checks contact the public update feed and GitHub release downloads. They never send GitLab credentials.
 
 ## Troubleshooting
+
+### Keychain asks for your password
+
+The first time Labwrk 1.1.16 or later opens, macOS asks once for your login password so Labwrk can move your GitLab sign-in into a Keychain entry it owns. Choose **Allow** or **Always Allow**. After that, Labwrk reads your sign-in without asking, including after updates. If you choose **Deny**, sign in again from **Settings → Account**.
 
 ### Diagnostic logs
 
