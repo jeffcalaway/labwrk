@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.17 — 2026-10-16
+
+- Picked up a newer GitLab sign-in saved in Keychain when another copy of Labwrk or an interrupted connection had already renewed it, instead of reporting that authorization expired or was revoked.
+- Retried temporary proxy and network errors while renewing a sign-in, rather than signing out.
+- Kept a single copy of Labwrk running; a second copy now quits at launch.
+- Recorded sign-in renewal failures in the diagnostic logs with their status code, without tokens or response details.
+
 ## 1.1.16 — 2026-10-16
 
 - Added a drag-to-install disk image, **Labwrk.dmg**, with a branded installer window. The ZIP remains available and still delivers automatic updates.

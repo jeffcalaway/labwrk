@@ -10,7 +10,7 @@ The name combines GitLab with the idea of laboratory work: a small instrument fo
 
 **[Download Labwrk](https://github.com/jeffcalaway/labwrk/releases/latest/download/Labwrk.dmg)** · **[Release notes](https://github.com/jeffcalaway/labwrk/releases/latest)** · **[Report an issue](https://github.com/jeffcalaway/labwrk/issues)**
 
-Current release: **[Labwrk 1.1.16](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.16)**, for Apple silicon and macOS 14 or later.
+Current release: **[Labwrk 1.1.17](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.17)**, for Apple silicon and macOS 14 or later.
 
 > [!IMPORTANT]
 > **First launch on macOS:** Labwrk is signed with its own certificate but has not been Apple-notarized. If macOS displays **“Labwrk Not Opened”**, follow [the first-launch steps](#first-launch-labwrk-not-opened).
@@ -247,6 +247,10 @@ Versions without a built-in updater need one manual installation of a newer vers
 ### Keychain asks for your password
 
 The first time Labwrk 1.1.16 or later opens, macOS asks once for your login password so Labwrk can move your GitLab sign-in into a Keychain entry it owns. Choose **Allow** or **Always Allow**. After that, Labwrk reads your sign-in without asking, including after updates. If you choose **Deny**, sign in again from **Settings → Account**.
+
+### “Your GitLab authorization has expired or was revoked”
+
+GitLab replaces your sign-in each time Labwrk renews it. Labwrk 1.1.17 and later pick up a renewal made by another copy of Labwrk and retry temporary network errors, so this message should only appear when GitLab has actually ended the authorization, for example after you revoke Labwrk in GitLab. Sign in again from **Settings → Account**. Renewal failures are recorded in the [diagnostic logs](#diagnostic-logs).
 
 ### Diagnostic logs
 
