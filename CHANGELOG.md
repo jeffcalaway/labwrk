@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.14 — 2026-10-16
+
+- Replaced the clipboard application icon with the official faceted-flask icon in Finder, Applications, the Dock, the App Switcher, and notifications.
+- Updated the pipeline panel, Settings, and About headers to show the flask artwork at full size with its own transparent rounded corners, without added backgrounds or padding.
+- Refreshed the README icon and all README screenshots.
+- Preserved the dynamic menu bar status indicator, GitLab monitoring, project scope, and saved settings.
+
 ## 1.1.13 — 2026-10-16
 
 - Added pipeline row context-menu actions to retry failed/canceled pipeline jobs or the most recently started job.
