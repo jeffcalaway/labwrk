@@ -6,6 +6,29 @@
         <description>Official signed Labwrk update archives.</description>
         <language>en</language>
         <item>
+            <title>1.1.9</title>
+            <pubDate>Thu, 15 Oct 2026 21:00:09 -0500</pubDate>
+            <link>https://github.com/jeffcalaway/labwrk</link>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.1.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.9 improves polling performance, memory use, and connection reliability.
+
+- Reused network connections and faster timestamp parsing reduce polling overhead.
+- Expired old pipeline notification history so memory does not grow with every pipeline seen over the app’s lifetime.
+- Prevented overlapping refreshes and cleaned up completed and canceled polling tasks.
+- Handled canceled requests quietly and prevented canceled token validation from installing a connection.
+- Stopped repeated refresh attempts after GitLab revokes a sign-in and preserved useful credential-storage errors.
+- Clamped invalid saved polling intervals to prevent excessive requests.
+
+Verified with 76 passing tests and a production build.
+
+Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
+]]></description>
+            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.9/Labwrk-1.1.9-macOS-arm64.zip" length="9052153" type="application/octet-stream" sparkle:edSignature="LlPpGMMmBcJMy08DV7z2+JDR6VuMgXBTMEs2L4WdKbn1kMvtP7JH6H0aXr7UNXzB3VTJRk4c8lV2fCRTQIq6DA=="/>
+        </item>
+        <item>
             <title>1.1.8</title>
             <pubDate>Thu, 15 Oct 2026 20:25:00 -0500</pubDate>
             <link>https://github.com/jeffcalaway/labwrk</link>
@@ -13,7 +36,7 @@
             <sparkle:shortVersionString>1.1.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.8 removes the dark rim from application branding and improves setup guidance.
+            <description sparkle:format="markdown">Labwrk 1.1.8 removes the dark rim from application branding and improves setup guidance.
 
 - Corrected the clipboard artwork across the app icon catalog, macOS bundle icon, panel, Settings, About, and README. All sizes share the same full-canvas artwork with transparent corners and no black outer rim.
 - Renamed “Select Visible” to “Select All” in Projects. It selects all items matching the search; clear the search to select the complete list.
@@ -21,7 +44,7 @@
 - Preserved the dynamic menu bar status indicators and existing project scope behavior.
 
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-]]></description>
+</description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.8/Labwrk-1.1.8-macOS-arm64.zip" length="9047110" type="application/octet-stream" sparkle:edSignature="hRilsLb+34OianWAycUDQKRO5bwtKEP0krDPHwrgrktIzZkdSBctm3nwT/J449WpVqoMTeAMj8DrYJoX24AHBQ=="/>
         </item>
         <item>
@@ -43,24 +66,6 @@ Requires macOS 14 or later on Apple silicon. This release is locally signed and 
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
 </description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.7/Labwrk-1.1.7-macOS-arm64.zip" length="6353869" type="application/octet-stream" sparkle:edSignature="fKFsNws9sB0voaFR02QHC9LLWmsK2fBMdY8PxHeekARLGjLsSZzqbX2C8fUd21Ri1xnIHjJj5PuvLEbF8hETAA=="/>
-        </item>
-        <item>
-            <title>1.1.6</title>
-            <pubDate>Thu, 15 Oct 2026 15:21:01 -0500</pubDate>
-            <link>https://github.com/jeffcalaway/labwrk</link>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>1.1.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">Labwrk 1.1.6 makes the initial running state clearer.
-
-- Running pipeline Status badges show the filled blue clock icon while zero jobs have finished, instead of an empty progress ring.
-- Once the first job finishes, the badge switches to the actual job-completion wedge. Zero progress remains zero in the underlying data and accessibility description; no progress is invented.
-- Genuinely pending pipelines keep their neutral waiting indicator. Menu bar dots are unchanged.
-
-Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-</description>
-            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.6/Labwrk-1.1.6-macOS-arm64.zip" length="5193189" type="application/octet-stream" sparkle:edSignature="QBP7r2eIDFK/W4MuIXeXNWKTadIa/KayeIcWOxWC1kttH+Wt32AglX1PAnoowpFkCbJrKGK7NoBLXL87+XvsDg=="/>
         </item>
     </channel>
 </rss>
