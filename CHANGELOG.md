@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.15 — 2026-10-16
+
+- Drew the panel, Settings, and About header icon with smooth rounded corners instead of jagged, clipped-looking edges at small sizes.
+- Separated the menu bar tooltip’s running count from its pipeline list with “ | ”, and removed the trailing colon when no pipelines follow.
+
 ## 1.1.14 — 2026-10-16
 
 - Replaced the clipboard application icon with the official faceted-flask icon in Finder, Applications, the Dock, the App Switcher, and notifications.
