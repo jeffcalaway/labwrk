@@ -6,6 +6,28 @@
         <description>Official signed Labwrk update archives.</description>
         <language>en</language>
         <item>
+            <title>1.1.10</title>
+            <pubDate>Fri, 16 Oct 2026 08:25:26 -0500</pubDate>
+            <link>https://github.com/jeffcalaway/labwrk</link>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>1.1.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.10 adds diagnostic logs to help identify GitLab API access failures.
+
+- Automatically records failed API requests with timestamps, project names and IDs, endpoints, and HTTP status codes.
+- Adds Settings → Preferences → Diagnostics → Show Logs in Finder.
+- Records network error codes without logging credentials, headers, or response bodies.
+- Rotates logs at approximately 1 MB and retains one previous file.
+- Keeps monitoring working even if a log cannot be written.
+
+Logs begin with this version and cannot recover earlier failures. Project names are available after the project list loads; other project requests retain their ID or lookup endpoint. Logs include server hostnames and project names, so review them before sharing.
+
+Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
+]]></description>
+            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.10/Labwrk-1.1.10-macOS-arm64.zip" length="9074477" type="application/octet-stream" sparkle:edSignature="+5VAQ9aoWPjSJiOYCoETcex/mlMNPTv1E9qdEfIa1nkUjTnQPtbuyzCmjgHrmay+bn0oXiwRpRIFEZYYZsCjAw=="/>
+        </item>
+        <item>
             <title>1.1.9</title>
             <pubDate>Thu, 15 Oct 2026 21:00:09 -0500</pubDate>
             <link>https://github.com/jeffcalaway/labwrk</link>
@@ -13,7 +35,7 @@
             <sparkle:shortVersionString>1.1.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.9 improves polling performance, memory use, and connection reliability.
+            <description sparkle:format="markdown">Labwrk 1.1.9 improves polling performance, memory use, and connection reliability.
 
 - Reused network connections and faster timestamp parsing reduce polling overhead.
 - Expired old pipeline notification history so memory does not grow with every pipeline seen over the app’s lifetime.
@@ -25,7 +47,7 @@
 Verified with 76 passing tests and a production build.
 
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-]]></description>
+</description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.9/Labwrk-1.1.9-macOS-arm64.zip" length="9052153" type="application/octet-stream" sparkle:edSignature="LlPpGMMmBcJMy08DV7z2+JDR6VuMgXBTMEs2L4WdKbn1kMvtP7JH6H0aXr7UNXzB3VTJRk4c8lV2fCRTQIq6DA=="/>
         </item>
         <item>
@@ -46,26 +68,6 @@ Requires macOS 14 or later on Apple silicon. This release is locally signed and 
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
 </description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.8/Labwrk-1.1.8-macOS-arm64.zip" length="9047110" type="application/octet-stream" sparkle:edSignature="hRilsLb+34OianWAycUDQKRO5bwtKEP0krDPHwrgrktIzZkdSBctm3nwT/J449WpVqoMTeAMj8DrYJoX24AHBQ=="/>
-        </item>
-        <item>
-            <title>1.1.7</title>
-            <pubDate>Thu, 15 Oct 2026 20:09:26 -0500</pubDate>
-            <link>https://github.com/jeffcalaway/labwrk</link>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>1.1.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">Labwrk 1.1.7 introduces clipboard branding and flexible project scope.
-
-- Replaced the application icon with the supplied full-canvas clipboard artwork, preserving transparency without added black backgrounds or padding. Panel, Settings, and About headers load the supplied icon directly.
-- Added all five project scope modes: all projects, selected projects, selected groups, all except selected projects, and all except selected groups.
-- Added searchable project/group lists, inclusion/exclusion labels, scope counts, and Apply/Revert controls. Group selections include nested groups and newly discovered member projects.
-- Preserved saved project selections through migration. Scope consistently controls the pipeline panel, dynamic menu bar indicator, running count, and notifications.
-- Preserved the dynamic menu bar status behavior.
-
-Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-</description>
-            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.7/Labwrk-1.1.7-macOS-arm64.zip" length="6353869" type="application/octet-stream" sparkle:edSignature="fKFsNws9sB0voaFR02QHC9LLWmsK2fBMdY8PxHeekARLGjLsSZzqbX2C8fUd21Ri1xnIHjJj5PuvLEbF8hETAA=="/>
         </item>
     </channel>
 </rss>
