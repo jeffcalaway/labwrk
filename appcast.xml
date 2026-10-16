@@ -6,6 +6,27 @@
         <description>Official signed Labwrk update archives.</description>
         <language>en</language>
         <item>
+            <title>1.1.11</title>
+            <pubDate>Fri, 16 Oct 2026 08:41:32 -0500</pubDate>
+            <link>https://github.com/jeffcalaway/labwrk</link>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.1.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.11 keeps accessible pipelines refreshing when GitLab denies access to a project.
+
+- Skips projects returning HTTP 403 during pipeline listing instead of failing the entire refresh.
+- Names skipped projects in a warning at the top of the panel and marks the running count as partial.
+- Continues refreshing other projects and records denied requests in Diagnostics.
+- Retries skipped projects on the next refresh and clears the warning when access recovers.
+- Continues with the last loaded project/group list if its refresh returns 403.
+- Keeps existing pipeline summaries when details are unavailable, with a warning.
+
+Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
+]]></description>
+            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.11/Labwrk-1.1.11-macOS-arm64.zip" length="9078802" type="application/octet-stream" sparkle:edSignature="UhT2caix++DSyAJxILZUQhZYJFwvLJVUwoZjsoiadrbFLYmMkdtA/Yen7H2ChLFydabsXgLYknegBLCR4UQnDg=="/>
+        </item>
+        <item>
             <title>1.1.10</title>
             <pubDate>Fri, 16 Oct 2026 08:25:26 -0500</pubDate>
             <link>https://github.com/jeffcalaway/labwrk</link>
@@ -13,7 +34,7 @@
             <sparkle:shortVersionString>1.1.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.10 adds diagnostic logs to help identify GitLab API access failures.
+            <description sparkle:format="markdown">Labwrk 1.1.10 adds diagnostic logs to help identify GitLab API access failures.
 
 - Automatically records failed API requests with timestamps, project names and IDs, endpoints, and HTTP status codes.
 - Adds Settings → Preferences → Diagnostics → Show Logs in Finder.
@@ -24,7 +45,7 @@
 Logs begin with this version and cannot recover earlier failures. Project names are available after the project list loads; other project requests retain their ID or lookup endpoint. Logs include server hostnames and project names, so review them before sharing.
 
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-]]></description>
+</description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.10/Labwrk-1.1.10-macOS-arm64.zip" length="9074477" type="application/octet-stream" sparkle:edSignature="+5VAQ9aoWPjSJiOYCoETcex/mlMNPTv1E9qdEfIa1nkUjTnQPtbuyzCmjgHrmay+bn0oXiwRpRIFEZYYZsCjAw=="/>
         </item>
         <item>
@@ -49,25 +70,6 @@ Verified with 76 passing tests and a production build.
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
 </description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.9/Labwrk-1.1.9-macOS-arm64.zip" length="9052153" type="application/octet-stream" sparkle:edSignature="LlPpGMMmBcJMy08DV7z2+JDR6VuMgXBTMEs2L4WdKbn1kMvtP7JH6H0aXr7UNXzB3VTJRk4c8lV2fCRTQIq6DA=="/>
-        </item>
-        <item>
-            <title>1.1.8</title>
-            <pubDate>Thu, 15 Oct 2026 20:25:00 -0500</pubDate>
-            <link>https://github.com/jeffcalaway/labwrk</link>
-            <sparkle:version>10</sparkle:version>
-            <sparkle:shortVersionString>1.1.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">Labwrk 1.1.8 removes the dark rim from application branding and improves setup guidance.
-
-- Corrected the clipboard artwork across the app icon catalog, macOS bundle icon, panel, Settings, About, and README. All sizes share the same full-canvas artwork with transparent corners and no black outer rim.
-- Renamed “Select Visible” to “Select All” in Projects. It selects all items matching the search; clear the search to select the complete list.
-- Added a step-by-step README setup guide with real application screenshots covering account connection, all five project scope modes, nested groups, saving selections, preferences, and updates.
-- Preserved the dynamic menu bar status indicators and existing project scope behavior.
-
-Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-</description>
-            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.8/Labwrk-1.1.8-macOS-arm64.zip" length="9047110" type="application/octet-stream" sparkle:edSignature="hRilsLb+34OianWAycUDQKRO5bwtKEP0krDPHwrgrktIzZkdSBctm3nwT/J449WpVqoMTeAMj8DrYJoX24AHBQ=="/>
         </item>
     </channel>
 </rss>
