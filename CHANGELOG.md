@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.10 — 2026-10-16
+
+- Added automatic diagnostic logs identifying failed API endpoints, HTTP status codes, and project names/IDs.
+- Added **Show Logs in Finder** under Settings → Preferences → Diagnostics.
+- Excluded credentials, headers, and response bodies; limited retention to two rotating log files.
+- Ensured log-writing failures do not interrupt monitoring.
+
 ## 1.1.9 — 2026-10-15
 
 - Reduced polling overhead with reusable network connections and faster timestamp parsing.
