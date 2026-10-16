@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.12 — 2026-10-16
+
+- Added a white checkmark for passed pipelines in the menu bar.
+- Updated failed, warning, and running indicators to filled circles with pale borders.
+- Reduced indicator spacing by one point while preserving next, cancelled, and nonexistent pipeline circles.
+
 ## 1.1.11 — 2026-10-16
 
 - Continued refreshing accessible pipelines when a project returns HTTP 403.
