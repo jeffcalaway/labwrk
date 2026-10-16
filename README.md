@@ -8,7 +8,7 @@ The name combines GitLab with the idea of laboratory work: a small instrument fo
 
 **[Download the latest release](https://github.com/jeffcalaway/labwrk/releases/latest)** · **[Report an issue](https://github.com/jeffcalaway/labwrk/issues)**
 
-Current release: **[Labwrk 1.1.8](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.8)**, for Apple silicon and macOS 14 or later.
+Current release: **[Labwrk 1.1.9](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.9)**, for Apple silicon and macOS 14 or later.
 
 > [!IMPORTANT]
 > **First launch on macOS:** the current release is locally signed and has not been Apple-notarized. If macOS displays **“Labwrk Not Opened”**, use **System Settings → Privacy & Security → Open Anyway** as described below.

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.9 — 2026-10-15
+
+- Reduced polling overhead with reusable network connections and faster timestamp parsing.
+- Expired old notification history to prevent lifetime memory growth.
+- Prevented overlapping refreshes and cleaned up polling tasks.
+- Improved cancellation and revoked-sign-in handling.
+- Prevented invalid saved polling intervals from causing excessive requests.
+
 ## 1.1.8 — 2026-10-15
 
 - Removed the dark rim from all current application icon and README branding assets, preserving transparent corners.
