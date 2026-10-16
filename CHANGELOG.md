@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.7 — 2026-10-15
+
+- Updated all official branding to the full-canvas clipboard icon with preserved transparency.
+- Added five project scope modes, searchable project/group selection, nested-group support, and Apply/Revert controls.
+- Migrated existing project selections and applied scope consistently to monitoring, counts, and notifications.
+- Preserved the dynamic menu bar indicator.
+
 ## 1.1.6 — 2026-10-15
 
 - Showed the running clock in pipeline Status badges until the first job finishes, then switched to measured progress.
