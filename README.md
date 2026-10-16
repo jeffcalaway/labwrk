@@ -8,7 +8,7 @@ The name combines GitLab with the idea of laboratory work: a small instrument fo
 
 **[Download the latest release](https://github.com/jeffcalaway/labwrk/releases/latest)** · **[Report an issue](https://github.com/jeffcalaway/labwrk/issues)**
 
-Current release: **[Labwrk 1.1.10](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.10)**, for Apple silicon and macOS 14 or later.
+Current release: **[Labwrk 1.1.11](https://github.com/jeffcalaway/labwrk/releases/tag/v1.1.11)**, for Apple silicon and macOS 14 or later.
 
 > [!IMPORTANT]
 > **First launch on macOS:** the current release is locally signed and has not been Apple-notarized. If macOS displays **“Labwrk Not Opened”**, use **System Settings → Privacy & Security → Open Anyway** as described below.
@@ -147,3 +147,5 @@ Copyright © 2026 Jeff Calaway. All rights reserved. Labwrk is not affiliated wi
 ### Diagnostic logs
 
 Open **Settings → Preferences → Diagnostics → Show Logs in Finder** to inspect automatically recorded API failures. Logs identify the endpoint, HTTP status, and project name/ID when available. Tokens, headers, and response bodies are excluded. Two rotating log files are retained in `~/Library/Logs/Labwrk`; review project names and server hostnames before sharing.
+
+If a project returns HTTP 403 during pipeline listing, Labwrk skips it for that refresh and names it in a panel warning. Other projects continue refreshing. The running count is marked partial and excludes skipped projects; Labwrk retries access on the next refresh. Denied requests remain in the diagnostic logs.

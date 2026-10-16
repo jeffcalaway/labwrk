@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.11 — 2026-10-16
+
+- Continued refreshing accessible pipelines when a project returns HTTP 403.
+- Named skipped projects in a panel warning and marked the running count as partial.
+- Retried skipped projects on subsequent refreshes and preserved diagnostic logging.
+- Continued polling with the last loaded inventory when project/group list refresh is forbidden.
+
 ## 1.1.10 — 2026-10-16
 
 - Added automatic diagnostic logs identifying failed API endpoints, HTTP status codes, and project names/IDs.
