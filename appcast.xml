@@ -6,6 +6,25 @@
         <description>Official signed Labwrk update archives.</description>
         <language>en</language>
         <item>
+            <title>1.1.16</title>
+            <pubDate>Fri, 16 Oct 2026 16:32:47 -0500</pubDate>
+            <link>https://github.com/jeffcalaway/labwrk</link>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.1.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.16 adds a drag-to-install installer and stops macOS from asking for your password every time Labwrk updates.
+
+- **New installer:** download **Labwrk.dmg**, open it, and drag Labwrk into Applications. The ZIP remains available and is still used for automatic updates.
+- **Fewer Keychain prompts:** Labwrk is now signed with its own consistent certificate, so macOS remembers that Labwrk may read your GitLab sign-in. Earlier builds looked like a new app after every update, which made macOS ask for your login password again.
+- **One last prompt:** the first time 1.1.16 opens, macOS asks once more for your login password so Labwrk can move your sign-in into its new Keychain entry. Choose **Allow** or **Always Allow**; either works, and Labwrk won't ask again. If you choose **Deny**, sign in again from Settings → Account.
+- Leaves GitLab monitoring, project scope, notifications, and saved settings unchanged.
+
+Requires macOS 14 or later on Apple silicon. This release is signed with Labwrk's own certificate and has not been Apple Developer ID signed or notarized, so macOS asks you to approve the first launch of a newly downloaded copy (System Settings → Privacy & Security → Open Anyway). Update archives are independently Ed25519-signed and verified by Sparkle.
+]]></description>
+            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.16/Labwrk-1.1.16-macOS-arm64.zip" length="5759322" type="application/octet-stream" sparkle:edSignature="7Qtn6hiRieWrHBT4s0farJbiTm7kEY2h6hjs4Pbqe0Vz/9SNPPq8PanjGRtjIeVSetCMrHwWdcJ29oLM/FkXBA=="/>
+        </item>
+        <item>
             <title>1.1.15</title>
             <pubDate>Fri, 16 Oct 2026 15:00:35 -0500</pubDate>
             <link>https://github.com/jeffcalaway/labwrk</link>
@@ -13,14 +32,14 @@
             <sparkle:shortVersionString>1.1.15</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Labwrk 1.1.15 polishes the panel icon and the menu bar summary.
+            <description sparkle:format="markdown">Labwrk 1.1.15 polishes the panel icon and the menu bar summary.
 
 - Draws the flask icon in the pipeline panel, Settings, and About headers with smooth rounded corners. Previously, small sizes could show jagged, clipped-looking edges.
 - The menu bar indicator’s tooltip now separates the running count from the pipeline list with a pipe, for example “2 running pipelines | #…”. When no pipelines follow, it reads “0 running pipelines” without a trailing colon. VoiceOver reads the same summary.
 - Leaves the dynamic menu bar status indicator, GitLab monitoring, project scope, and saved settings unchanged.
 
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-]]></description>
+</description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.15/Labwrk-1.1.15-macOS-arm64.zip" length="5744726" type="application/octet-stream" sparkle:edSignature="24QhZlGAfBEbgU0qGgn+mDQP9kMsg2JJwHyQDMI7xn48tjW0OuD1XXG9wa/Ijl/yQC9FzY9X4INOdVVMEC4HBw=="/>
         </item>
         <item>
@@ -43,26 +62,6 @@ If Finder or the Dock still shows the previous icon after updating, relaunch Lab
 Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
 </description>
             <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.14/Labwrk-1.1.14-macOS-arm64.zip" length="5743454" type="application/octet-stream" sparkle:edSignature="3H+WkGlvV4y+SuKX0xIv6TBYiUgTq9V2hhEaNxnw+fcLdrJA07uJX2Au1t6/vU1BF9P138rGRRG4nMijE+Y/BA=="/>
-        </item>
-        <item>
-            <title>1.1.13</title>
-            <pubDate>Fri, 16 Oct 2026 13:36:16 -0500</pubDate>
-            <link>https://github.com/jeffcalaway/labwrk</link>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>1.1.13</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">Labwrk 1.1.13 adds pipeline rerun controls and refines the passed indicator.
-
-- Right-click a pipeline row and choose **Rerun Pipeline** to retry its failed or canceled jobs.
-- Choose **Rerun Last Job** to retry the most recently started job, including a successful job. Jobs that have never run are excluded.
-- Disables unavailable rerun actions and prevents overlapping retries for the same pipeline. Successful retries refresh the panel; failures show a clear message.
-- New GitLab sign-ins request `api` scope, which reruns require. Existing `read_api` connections can continue monitoring; enable `api` scope in the GitLab OAuth application and reconnect, or use an `api` personal access token, to rerun jobs. Project permissions still apply.
-- Updates the menu bar passed checkmark to the revised supplied SVG.
-
-Requires macOS 14 or later on Apple silicon. This release is locally signed and has not been Apple Developer ID signed or notarized. Update archives are independently Ed25519-signed and verified by Sparkle. macOS may require per-app approval when opening a manually downloaded build.
-</description>
-            <enclosure url="https://github.com/jeffcalaway/labwrk/releases/download/v1.1.13/Labwrk-1.1.13-macOS-arm64.zip" length="9103167" type="application/octet-stream" sparkle:edSignature="U5e+tb2M0KRyav2G6hf9HkMcWiQX8unQyyJYbTsLBu6pAahGK5gZQyEng7uWKN0qe1QgCtKC92JmIvKvv8jdAw=="/>
         </item>
     </channel>
 </rss>
