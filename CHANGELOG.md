@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.8 — 2026-10-15
+
+- Removed the dark rim from all current application icon and README branding assets, preserving transparent corners.
+- Renamed the Projects selection button to **Select All**.
+- Added an illustrated setup guide covering account connection, all five project scope modes, nested groups, preferences, and updates.
+
 ## 1.1.7 — 2026-10-15
 
 - Updated all official branding to the full-canvas clipboard icon with preserved transparency.
