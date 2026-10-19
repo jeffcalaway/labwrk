@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.19 — 2026-10-19
+
+- Kept the pipeline panel fully on screen: when the menu bar icon is far to the right, the panel now shifts left instead of opening partly cut off.
+
 ## 1.1.18 — 2026-10-16
 
 - Repeated a GitLab request once when it went unanswered, so “Stages unavailable” warnings and refresh errors appear far less often. Reruns are never sent twice.
